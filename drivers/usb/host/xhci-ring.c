@@ -3483,7 +3483,6 @@ int xhci_queue_ctrl_tx(struct xhci_hcd *xhci, gfp_t mem_flags,
 	if (start_cycle == 0)
 		field |= 0x1;
 
-	/* xHCI 1.0 6.4.1.2.1: Transfer Type field */
 #ifdef CONFIG_USB_XHCI_MTK
 	if (1) {
 #else
